@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body class="mx-0 pd-0 bg-blue-300">
+    <div
+      class="w-10/12 border-2 border-black mx-auto h-screen/2 rounded py-2 px-2"
+      id="username"
+    >
+      <form
+        action="chat.html"
+        class="h-full flex flex-col justify-center content-center w-6/12 mx-auto"
+        id="usernameForm"
+      >
+        <label for="username" class="mx-auto">
+          Username
+          <input type="text" id="nickname" name="username" />
+        </label>
+        <button
+          type="submit"
+          class="submit bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded mx-auto my-2"
+        >
+          Start Chatting
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

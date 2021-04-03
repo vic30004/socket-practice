@@ -1,0 +1,31 @@
+{
+  "name": "socket-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "dev": "parcel server.js",
+    "build": "postcss style.css -o public/styles/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "parcel-bundler": "^1.12.5",
+    "postcss-cli": "^8.3.1",
+    "socket.io": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.3"
+  }
+}

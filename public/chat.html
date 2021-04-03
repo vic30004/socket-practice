@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Chat</title>
+  </head>
+  <body class="mx-0 pd-0 bg-blue-300">
+    <ul class="pages w-10/12 mx-auto py-2" id="chatArea">
+      <li class="">
+        <div
+          class="chatArea border-2 rounded border-blue-400 py-2 h-screen/2 overflow-auto px-2"
+          id="chatBox"
+        >
+          <ul class="message"></ul>
+        </div>
+        <form action="" id="chat" class="flex flex-col">
+          <input
+            type="text"
+            placeholder="Type Here..."
+            class="inputMessage border-2 rounded border-blue-500 px-2 py-2"
+          />
+          <button
+            class="submit bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            send
+          </button>
+        </form>
+      </li>
+    </ul>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.6/qs.min.js"
+      integrity="sha512-3TmPrquYLaAsUmZKXRARTDC5siWhLAdBVqNo4dWpDABBtLU62AaoTaQJEvjxjExcZYurO6i1dnK85k8pPIBlRg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
